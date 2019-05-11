@@ -26,8 +26,9 @@ public class numbers {
 		System.out.println(15 % 4);  // 15 mod 4 = 3
 		System.out.println(16 % 4);  // 16 mod 4 = 0
 		/*
-		 * left and right increamental vs decreamental
+		 * increamental & decreamental numbers
 		 * */
+		System.out.println("increamental & decreamental numbers");
 		int x =3;
 		x++;
 		System.out.println(x);
@@ -44,7 +45,7 @@ public class numbers {
 		System.out.println(z);  // 6
 		
 		int h = 3;
-		int j = h++; // m value give to n, then m increased
+		int j = h++; // h value give to j, then h increased
 		System.out.println(h); // 4
 		System.out.println(j); // 3
 	}
