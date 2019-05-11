@@ -41,14 +41,14 @@ public class switcher {
     	}
     	System.out.println("your input string is "+y);
     	switch(y) {
-	    	case "abc":
-	    		System.out.println("abc matched !");
+	    	case "mj":
+	    		System.out.println("mj matched Michael Jordan!");
 	    		break;
-	    	case "def":
-	    		System.out.println("def matched !");
+	    	case "kb":
+	    		System.out.println("kb matched Kobe Bryant!");
 	    		break;
-	    	case "gh":
-	    		System.out.println("gh matched !");
+	    	case "kg":
+	    		System.out.println("kg matched Kevin Garnet!");
 	    		break;
 	    	default:
 	    		System.out.println("None matched !");
@@ -65,14 +65,14 @@ public class switcher {
     	}
     	System.out.println("your input letter is "+z);
     	switch(z) {
-	    	case 'a':
-	    		System.out.println("a matched !");
+	    	case 'm':
+	    		System.out.println("m matched, Mondy !");
 	    		break;
-	    	case 'b':
-	    		System.out.println("b matched !");
+	    	case 't':
+	    		System.out.println("t matched Tuesday!");
 	    		break;
-	    	case 'c':
-	    		System.out.println("c matched !");
+	    	case 'w':
+	    		System.out.println("w matched Wednesday!");
 	    		break;
 	    	default:
 	    		System.out.println("None matched !");
