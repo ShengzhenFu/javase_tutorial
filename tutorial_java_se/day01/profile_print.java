@@ -2,7 +2,11 @@ package day01;
 
 import java.util.Scanner;
 
-
+/*
+ * this example is to let you know 
+ * how to read input from console
+ * how to print it in the console
+ * */
 public class profile_print {
     public String name;
     public String country;
