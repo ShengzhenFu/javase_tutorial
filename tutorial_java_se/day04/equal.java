@@ -1,4 +1,4 @@
-package day4;
+package day04;
 
 public class equal {
 	public static void main(String[] args) {
