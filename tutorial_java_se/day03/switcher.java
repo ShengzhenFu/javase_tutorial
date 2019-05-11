@@ -81,8 +81,8 @@ public class switcher {
     	}
     public static void main(String[] args){
     	switcher swn = new switcher();
-    	swn.switch_numbers();
-    	swn.switch_string();
-    	swn.switch_char();
+    	swn.switch_numbers(); // call switch_numbers function
+    	swn.switch_string();  // call switch_string function
+    	swn.switch_char();  // call switch_char function
     }
 }
