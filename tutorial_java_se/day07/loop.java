@@ -83,6 +83,18 @@ public class loop {
 				break;  // the loop will stop at 5 
 			}
 		}
+		System.out.println("***************************");
+	}
+	/*
+	 * for loop with continue
+	 */
+	void for_loop_continue() {
+		for (int i = 0; i < 10; i++) {
+			System.out.println(i);
+			if(i == 5) {
+				break;  // the loop will skip 5 
+			}
+		}
 	}
 	public static void main(String[] args) {
 		loop lp = new loop();
@@ -92,5 +104,6 @@ public class loop {
 		lp.for_loop_basic();
 		lp.nested_for_loop();
 		lp.for_loop_break();
+		lp.for_loop_continue();
 	}
 }
