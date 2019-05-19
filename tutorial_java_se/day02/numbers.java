@@ -1,6 +1,21 @@
 package day02;
 
 public class numbers {
+	public static int max_3(int a, int b, int c) {
+		int max = Integer.MIN_VALUE;
+		if(a > max) {
+			max = a;
+		}
+		if(b > max) {
+			max = b;
+		}
+		if(c > max) {
+			max = c;
+		}
+		System.out.println("the max number among "+a+", "+b+", "+c+" is : "+max);
+		return max;
+	}
+	
 	public static void main(String[] args) {
 		/*
 		 * +add+ -minus- *multiply* /divide/ calculation 
@@ -48,5 +63,7 @@ public class numbers {
 		int j = h++; // h value give to j, then h increased
 		System.out.println(h); // 4
 		System.out.println(j); // 3
+		
+		System.out.println(max_3(3, 5, 8));
 	}
 }
