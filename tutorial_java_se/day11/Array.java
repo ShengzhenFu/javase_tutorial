@@ -1,5 +1,7 @@
 package day11;
 
+import java.util.Arrays;
+
 public class Array {
 	public static void main(String[] args) {
 		// declare type int[]
@@ -51,11 +53,80 @@ public class Array {
 		System.out.println("-----foreach loop through arr9, foreach can't modify element value------");
 		for (int e : arr9) {
 			System.out.println(e);
-		}
-		// 
-		int n = 10;
-		int[] arr10 = new int[n];
+		}	
+		System.out.println("-----------");
+		int[] arry1 = {1, 2, 3};
+		int[] arry2 = {1, 2, 3};
+		System.out.println(arry1 == arry2); // false
+		System.out.println(Arrays.equals(arry1, arry2)); //true
 		
+		int [] arry3 = arry1;
+		System.out.println(arry3 == arry1);
+		System.out.println("-----------");
+		/*
+		 * copy array address
+		 * */
+		int[] arry5 = {6, 7, 8};
+		int[] arry6 = arry5; // this is copying the address
+		arry5[0] = 5;
+		System.out.println(arry6[0]);
+		
+		// copy array value (manually)
+		int[] arry7 = {6, 7, 8};
+		int[] arry8 = new int[arry7.length]; // arry8 is a new one, independent from arry7
+		for(int i = 0; i < arry7.length; i++) {
+			arry8[i] = arry7[i];
+		}
+		arry7[0] = 9;
+		System.out.println(arry8[0]);
+		
+		// copy array by built-in method System.arraycopy(src, srcPos, dest, destPos, length);
+		int[] arry9 = {28,29,30};
+		int[] arry10 = new int[arry9.length];
+		System.arraycopy(arry9, 0, arry10, 0, arry9.length);
+		arry9[0] = 50;
+		for(int i: arry10) {
+		System.out.println(i);
+		}
+		
+		// copy array by built-in method Arrays.copyOf(original, newLength)
+		int[] arry11 = {88, 77, 66};
+		int[] arry12 = Arrays.copyOf(arry11, 2);
+		for (int i : arry12) {
+			System.out.println(i);
+		}
+		System.out.println(arry12.length);
+		// Arrays.fill value to array
+		int[] arry13 = new int[3];
+		Arrays.fill(arry13, 9);
+		for (int i : arry13) {
+			System.out.println(i);
+		}
+		//sort 
+		Arrays.sort(arry11);
+		for (int i : arry11) {
+			System.out.println(i);
+		}
+		// search
+		int[] arry14 = {44, 22, 55, 99};
+		System.out.println(Arrays.binarySearch(arry14, 55));
+		// format array
+		System.out.println(Arrays.toString(arry14));
+		// 2 dimension array
+		int[][] arry22 = {{10, 11}, {20,21,22},{30,31,32}};
+		// iterate 2 dimension array
+		for (int i = 0; i < arry22.length; i++) {
+			for (int j = 0; j < arry22[i].length; j++) {
+				System.out.println(arry22[i][j]);
+			}
+		}
+		for (int[] q : arry22) {
+			for (int i : q) {
+				System.out.println(i);
+			}
+			System.out.println();
+		}
+		// print 2 dimension array
+		System.out.println(Arrays.deepToString(arry22));
 	}
-	
 }
