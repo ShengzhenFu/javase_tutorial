@@ -65,5 +65,14 @@ public class numbers {
 		System.out.println(j); // 3
 		
 		System.out.println(max_3(3, 5, 8));
+		System.out.println(Long.MIN_VALUE + "\n" + Long.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE + "\n" +Integer.MAX_VALUE);
+		System.out.println(Float.MIN_VALUE + "\n" + Float.MAX_VALUE);
+		System.out.println(Double.MIN_VALUE + "\n" + Double.MAX_VALUE);
+		
+		long L = 1682;
+		// force convert to int
+		int i = (int)L;
+		System.out.println(i);
 	}
 }

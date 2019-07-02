@@ -2,18 +2,18 @@ package day07;
 
 public class loop {
 	/*
-	 * while loop to print 5 stars 5 times
+	 * while loop to print 5 stars 3 time
 	 */
 	void while_loop_print_5stars() {
 		int count = 0;
-		while(count < 5) {
-			System.out.println("   *");
-			System.out.println("  ***");
-			System.out.println(" *****");
-			System.out.println("*******");
-			System.out.println(" *****");
-			System.out.println("  ***");
-			System.out.println("   *");
+		while(count < 3) {
+			System.out.println("   j");
+			System.out.println("  ava");
+			System.out.println(" javaj");
+			System.out.println("avajava");
+			System.out.println(" javaj");
+			System.out.println("  ava");
+			System.out.println("   j");
 			count++;
 		}
 	}

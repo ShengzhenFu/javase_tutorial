@@ -2,7 +2,7 @@
 
 #### A tutorial for beginners
 
-This tutorial will assist you to learn Java language basics in a day by day, with very good example code,  clear explanations and also take away homework to help you to gain hands on experience.
+This tutorial will assist you to learn Java language basics day by day, with very good example code,  clear explanations and also take away homework to help you to gain hands on experience.
 
 
 
