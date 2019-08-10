@@ -5,6 +5,12 @@ public class Person {
 	char gender;
 	int age;
 	
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+
 	static int count; // static variable can be used by class
 	
 	public void showInfo() {
