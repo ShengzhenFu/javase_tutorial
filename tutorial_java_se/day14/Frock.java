@@ -1,6 +1,6 @@
 package day14;
-//将Frock类声明为抽象类，尺寸在Frock类中定义，在类中声明抽象方法calcArea方法，用来计算衣服的布料面
-//积。编写Shirt类继承Frock类，实现 calcArea方法，用来计算衬衣所需的布料面积（尺寸 * 1.3）。编写Coat类继承
+//将Frock类声明为抽象类，尺寸在Frock类中定义，在类中声明抽象方法calcArea方法，用来计算衣服的布料面积。
+//编写Shirt类继承Frock类，实现 calcArea方法，用来计算衬衣所需的布料面积（尺寸 * 1.3）。编写Coat类继承
 //Frock类，实现 calcArea方法，用来计算外套所需的布料面积（尺寸*1.5）。编写Test类，测试calcArea方法。
 public abstract class Frock {
 	protected double size;
@@ -16,6 +16,15 @@ public abstract class Frock {
 		this.size = size;
 	}
 	public abstract double calcArea();
+	
+	public static void main(String[] args) {
+		Shirt s = new Shirt(100);
+		System.out.println(s.size);
+		System.out.println(s.calcArea());
+
+		Coat c = new Coat(100);
+		System.out.println(c.calcArea());
+	}
 }
 
 class Shirt extends Frock{

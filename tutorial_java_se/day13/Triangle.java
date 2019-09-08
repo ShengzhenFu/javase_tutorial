@@ -22,8 +22,9 @@ public class Triangle {
 	public static double getArea(Triangle t) {
 		return t.getBase() * t.getHeight() / 2;
 	}
-	public static void main(String[] args) {
-		double area = getArea(new Triangle(3.0, 2.0));
-		System.out.println(area);
-	}
+
+public static void main(String[] args) {
+	double area = getArea(new Triangle(3.0, 2.0));
+	System.out.println(area);
+}
 }

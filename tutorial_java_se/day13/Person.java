@@ -35,7 +35,7 @@ public class Person {
 	public void setSno(int sno) {
 		this.sno = sno;
 	}
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		Person p = new Person("Tom", 23, 20190810);
 		System.out.println(p.getAge());
 		p.setAge(131);
